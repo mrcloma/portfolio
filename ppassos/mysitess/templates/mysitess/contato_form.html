@@ -1,0 +1,18 @@
+{% extends "mysitess/_layouts/base.html" %}
+{% block title %}Cadastro de contato{% endblock %}
+{% block conteudo %}
+{% load crispy_forms_tags %}
+<br><br><br><br><br>
+<div style="margin-left: 420px; margin-right: 420px">
+    <h1 class="card-title" style="text-align: center">Novo Contato</h1>
+
+<form method="post" novalidate>
+    {% csrf_token %}
+    {{ form|crispy }}
+    <button type="submit" class="btn btn-success">Cadastrar</button>
+  </form>
+
+
+
+</div><br><br><br><br><br><br><br><br>
+{% endblock %}

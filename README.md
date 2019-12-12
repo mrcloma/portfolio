@@ -1,2 +1,1 @@
-# portfolio
-a temporary porfolio
+# firstdjangoapp
